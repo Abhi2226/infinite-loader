@@ -10,11 +10,9 @@ let photoArray= [];
 // check if all images are loaded
 function imageLoaded(){
     imagesLoaded++;
-    console.log(imagesLoaded);
     if(imagesLoaded === totalImages){
         ready= true;
         loader.hidden = true;
-        console.log("ready= ",ready);
     }
 }
 
@@ -36,7 +34,7 @@ function displayPhotos(){
     // Run fuction for each object in photosArray
     photoArray.forEach((photo) =>{
         totalImages= photoArray.length;
-        console.log("total images = ",totalImages);
+        
         // create <a> to link to unsplah
         const item = document.createElement('a');
         // item.setAttribute('href' , photo.links.html);
